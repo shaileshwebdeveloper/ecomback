@@ -1,0 +1,59 @@
+{ 
+    "Products" : [{
+          "id" : 1,
+          "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+           "productName" : "Blue Shirt",
+           "price" : 100,
+           "desc"  : "Some text"
+        },
+        {
+         "id" : 2,
+         "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+          "productName" : "Blue Shirt",
+          "price" : 100,
+          "desc"  : "Some text"
+       },
+     {
+      "id" : 3, 
+      "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+       "productName" : "Blue Shirt",
+       "price" : 10,
+       "desc"  : " Some text"
+    },
+    {
+      "id" : 4,
+      "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+       "productName" : "Blue Shirt",
+       "price" : 20,
+       "desc"  : "Some text"
+    },
+ {
+   "id" : 5,
+   "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+    "productName" : "Blue Shirt",
+    "price" : 30,
+    "desc"  : " Some text"
+ },
+ {
+   "id" : 6,
+   "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+    "productName" : "Blue Shirt",
+    "price" : 40,
+    "desc"  : "Some text"
+ },
+{
+   "id" : 7,
+   "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+    "productName" : "Blue Shirt",
+    "price" : 100,
+    "desc"  : "Some text"
+ },
+ {
+   "id" : 8,
+   "img" : "https://cdn.pixabay.com/photo/2013/07/12/19/00/polo-shirt-154158__340.png",
+    "productName" : "Blue Shirt",
+    "price" : 50,
+    "desc"  : "Some text"
+ }
+
+]}
