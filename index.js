@@ -70,22 +70,17 @@ app.post('/signin', async(req, res) => {
     
 
     if(user === null){
-      res.send({'msg' : 'please check the email & password'})
+      res.status(500).send({'msg' : 'please check the email & password'})
     }
     else{
           const hashed_password = user.password
-    
-
-
-    bcrypt.compare(password, hashed_password, function(err, result) {
+        bcrypt.compare(password, hashed_password, function(err, result) {
       
       if(err){
         console.log("err", err)
-         res.send({'msg':'Something went wrong, try again later'})
+         res.status(500).send({'msg':'Something went wrong, try again later'})
       }
-
-
-      if(result){
+      else if(result){
 
          const user_id = user._id;
 
@@ -97,7 +92,7 @@ app.post('/signin', async(req, res) => {
       }
       else{
 
-         res.send('Login Failed')
+         res.status(500).send('Login Failed')
 
       }
     });
