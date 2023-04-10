@@ -104,12 +104,14 @@ app.post("/products", async(req,res)=>{
  
   try{
       
-      const products = await ProductModel.create(req.body)
-      return res.json({ status: 'ok', data: products})
-      
-  }catch(err){
-      return res.status(500).send(err)
-  }
+    const products = new ProductModel(req.body)
+    await products.save()
+    res.send({'msg' : 'added user succesfully', "data" : products})
+    
+}catch(err){
+    return res.status(500).send(err)
+} 
+
 })
 
 
@@ -117,7 +119,7 @@ app.get("/products", async(req, res) => {
   try{
     
     const products = await ProductModel.find()
-    res.send(products[0].Products)
+    res.send(products)
 
   }
   catch(err){
