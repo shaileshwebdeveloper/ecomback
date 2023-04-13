@@ -6,11 +6,15 @@ const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 const ProductModel = require("./models/ProductModel");
 const { authentication } = require("./middlewares/authentication");
+const jsonServer = require("json-server");
+// const server = jsonServer.create();
+const middlewares = jsonServer.defaults();
 
 require("dotenv").config();
 
 const app = express();
 app.use(cors())
+app.use(middlewares)
 
 // Syntax: app.use([path,],callback[,callback…])
 // app.use((req, res, next)
